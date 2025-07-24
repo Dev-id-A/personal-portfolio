@@ -1,6 +1,7 @@
 import { use, useState } from 'react'
 import './App.css'
-import Navbar from './assets/navbar'
+import Navbar from './assets/Navbar/Navbar'
+import Hero from './assets/Hero'
 
 function App() {
   const [changeLan, setChangeLan] = useState("es")
@@ -15,8 +16,9 @@ function App() {
   }
 
   return (
-    <main className="bg-blue-500">
+    <main className="">
     <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan}></Navbar>
+    <Hero changeLan={changeLan} fadeLan={fadeLan}></Hero>
     </main>
   )
 }
