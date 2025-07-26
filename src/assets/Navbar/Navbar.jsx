@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarA from './NavbarA'
+import NavbarLink from './NavbarLink'
 
 function Navbar({changeLan, fadeLan, toggleLan}) {
   return (
@@ -7,13 +7,13 @@ function Navbar({changeLan, fadeLan, toggleLan}) {
                     w-full h-20 text-2xl">
         <h1 id="name-navbar" className="mr-auto text-3xl">Dev-id</h1>
 
-          <NavbarA id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarA>
+          <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 
-          <NavbarA id="about-me-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Sobre mí":"About me"}</h2></NavbarA>
+          <NavbarLink to="../aboutMe" id="about-me-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Sobre mí":"About me"}</h2></NavbarLink>
 
-          <NavbarA id="projects-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Proyectos":"Projects"}</h2></NavbarA>
+          <NavbarLink to="../projects" id="projects-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Proyectos":"Projects"}</h2></NavbarLink>
 
-          <NavbarA id="contact-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Contacto":"Contact"}</h2></NavbarA>
+          <NavbarLink to="../contact" id="contact-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Contacto":"Contact"}</h2></NavbarLink>
                     
         <button id="change-language" onClick={toggleLan} className="h-10 w-20 rounded-full bg-gray-600 px-2 cursor-pointer">
             <div className="h-8 w-16 rounded-full bg-gray-400">
