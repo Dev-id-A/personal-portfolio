@@ -1,9 +1,9 @@
 import Navbar from '../src/assets/Navbar/Navbar'
 
-function Projects({fadeLan, changeLan, toggleLan}) {
+function Projects({fadeLan, changeLan}) {
   return (
     <main>
-      <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan}></Navbar>
+      <h1>Projects</h1>
     </main>
   )
 }

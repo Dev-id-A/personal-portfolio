@@ -1,9 +1,9 @@
 import Navbar from '../src/assets/Navbar/Navbar'
 
-function Contact({fadeLan, changeLan, toggleLan}) {
+function Contact({fadeLan, changeLan}) {
   return (
     <main>
-      <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan}></Navbar>
+      <h1> Contact</h1>
     </main>
   )
 }

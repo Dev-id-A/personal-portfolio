@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import { Route, Routes } from 'react-router-dom'
+import Navbar from "./assets/Navbar/Navbar"
 import Home from "../pages/Home"
 import AboutMe from "../pages/AboutMe"
 import Projects from "../pages/Projects"
@@ -19,12 +20,15 @@ function App() {
     }
 
   return (
+    <>
+      <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan}></Navbar>
     <Routes>
-      <Route path="/" element={<Home {...{changeLan, setChangeLan, fadeLan, setFadeLan, toggleLan}} />} />
-      <Route path="/aboutMe" element={<AboutMe {...{changeLan, setChangeLan, fadeLan, setFadeLan, toggleLan}} />} />
-      <Route path="/projects" element={<Projects {...{changeLan, setChangeLan, fadeLan, setFadeLan, toggleLan}} />} />
-      <Route path="/contact" element={<Contact {...{changeLan, setChangeLan, fadeLan, setFadeLan, toggleLan}} />} />
+      <Route path="/" element={<Home {...{changeLan, fadeLan}} />} />
+      <Route path="aboutMe" element={<AboutMe {...{changeLan, fadeLan}} />} />
+      <Route path="projects" element={<Projects {...{changeLan, fadeLan}} />} />
+      <Route path="contact" element={<Contact {...{changeLan, fadeLan}} />} />
     </Routes>
+    </>
   )
 }
 

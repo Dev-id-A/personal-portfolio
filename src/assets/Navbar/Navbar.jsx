@@ -9,11 +9,11 @@ function Navbar({changeLan, fadeLan, toggleLan}) {
 
           <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 
-          <NavbarLink to="../aboutMe" id="about-me-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Sobre mí":"About me"}</h2></NavbarLink>
+          <NavbarLink to="aboutMe" id="about-me-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Sobre mí":"About me"}</h2></NavbarLink>
 
-          <NavbarLink to="../projects" id="projects-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Proyectos":"Projects"}</h2></NavbarLink>
+          <NavbarLink to="projects" id="projects-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Proyectos":"Projects"}</h2></NavbarLink>
 
-          <NavbarLink to="../contact" id="contact-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Contacto":"Contact"}</h2></NavbarLink>
+          <NavbarLink to="contact" id="contact-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Contacto":"Contact"}</h2></NavbarLink>
                     
         <button id="change-language" onClick={toggleLan} className="h-10 w-20 rounded-full bg-gray-600 px-2 cursor-pointer">
             <div className="h-8 w-16 rounded-full bg-gray-400">
