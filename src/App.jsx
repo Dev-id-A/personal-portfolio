@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import { Route, Routes } from 'react-router-dom'
-import Navbar from "./assets/Navbar/Navbar"
+import Layout from "../pages/Layout"
 import Home from "../pages/Home"
 import AboutMe from "../pages/AboutMe"
 import Projects from "../pages/Projects"
@@ -21,13 +21,16 @@ function App() {
 
   return (
     <>
-      <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan}></Navbar>
     <Routes>
-      <Route path="/" element={<Home {...{changeLan, fadeLan}} />} />
-      <Route path="aboutMe" element={<AboutMe {...{changeLan, fadeLan}} />} />
-      <Route path="projects" element={<Projects {...{changeLan, fadeLan}} />} />
-      <Route path="contact" element={<Contact {...{changeLan, fadeLan}} />} />
-    </Routes>
+      <Route path="/" element={<Layout {...{changeLan, fadeLan, toggleLan}} />}>
+
+          <Route index element={<Home {...{changeLan, fadeLan}} />} />
+          <Route path="aboutMe" element={<AboutMe {...{changeLan, fadeLan}} />} />
+          <Route path="projects" element={<Projects {...{changeLan, fadeLan}} />} />
+          <Route path="contact" element={<Contact {...{changeLan, fadeLan}} />} />
+  
+      </Route>
+     </Routes>
     </>
   )
 }
