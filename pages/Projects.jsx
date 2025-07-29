@@ -1,5 +1,3 @@
-import Navbar from '../src/assets/Navbar/Navbar'
-
 function Projects({fadeLan, changeLan}) {
   return (
     <main>

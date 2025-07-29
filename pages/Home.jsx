@@ -1,5 +1,5 @@
-import Navbar from '../src/assets/Navbar/Navbar'
-import Hero from '../src/assets/Hero/Hero'
+import Hero from '../src/assets/Hero/Hero';
+
 
 function Home({fadeLan, changeLan}) {
 

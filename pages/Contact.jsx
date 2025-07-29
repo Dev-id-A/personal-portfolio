@@ -1,5 +1,3 @@
-import Navbar from '../src/assets/Navbar/Navbar'
-
 function Contact({fadeLan, changeLan}) {
   return (
     <main>
