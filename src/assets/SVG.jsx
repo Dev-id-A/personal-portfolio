@@ -1,6 +1,8 @@
-function SVG() {
+function SVG({src, alt}) {
   return (
-    <div></div>
+    <div className="size-25">
+        <img src={`src/assets/icons/${src}.svg`} alt={`${alt}`} />
+    </div>
   )
 }
 

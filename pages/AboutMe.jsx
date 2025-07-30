@@ -1,3 +1,20 @@
+import SVG from "../src/assets/SVG"
+
+const svgData = [
+  {src: "html5", alt: "HTML"},
+  {src: "css", alt: "CSS"},
+  {src: "javascript", alt: "JavaScript"},
+  {src: "typescript", alt: "TypeScript"},
+  {src: "react", alt: "React"},
+  {src: "nodedotjs", alt: "Node.js"},
+  {src: "bootstrap", alt: "Bootstrap"},
+  {src: "jquery", alt: "jQuery"},
+  {src: "sass", alt: "SASS"},
+  {src: "tailwindcss", alt: "TailwindCSS"},
+  {src: "d3", alt: "D3.js"},
+  {src: "postgresql", alt: "PostgreSQL"}
+]
+
 function AboutMe({fadeLan, changeLan}) {
   return (
     <main>
@@ -58,35 +75,11 @@ function AboutMe({fadeLan, changeLan}) {
         <div id="tecnologies-div" className={`mt-10 flex flex-col items-center transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
           <h2 id="tecnologies-title" className="text-4xl">{changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
 
-          <div id="row-1" className="grid grid-cols-3 gap-30 mt-10">
+          <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-10 space-around">
 
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-
-          </div>
-
-          <div id="row-1" className="grid grid-cols-3 gap-30 mt-10">
-
-            <p>TypeScript</p>
-            <p>REACT</p>
-            <p>Node.js</p>
-
-          </div>
-
-          <div id="row-1" className="grid grid-cols-3 gap-30 mt-10">
-
-            <p>Bootstrap</p>
-            <p>jQuery</p>
-            <p>SASS</p>
-            
-          </div>
-
-          <div id="row-1" className="grid grid-cols-3 gap-30 mt-10">
-
-            <p>Tailwind</p>
-            <p>D3.js</p>
-            <p>postgreSQL</p>
+            {svgData.map((svg) => (
+              <SVG src={svg.src} key={svg.alt} alt={svg.alt}/>
+            ))}
             
           </div>
         </div>
