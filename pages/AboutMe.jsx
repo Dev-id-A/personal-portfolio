@@ -17,12 +17,12 @@ const svgData = [
 
 function AboutMe({fadeLan, changeLan}) {
   return (
-    <main>
+    <main className={`transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
       <h1 id="username" className="text-center text-5xl mt-10">David Aranzana</h1>
 
       <section className="grid grid-cols-2">
 
-        <div id="about-me-text" className={`text-justify px-30 mt-10 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
+        <div id="about-me-text" className="text-justify px-30 mt-10">
 
           <h2 id="about-me-title" className="text-center text-4xl">{changeLan == "es" ? "Sobre mí":"About me"}</h2>
 
@@ -58,7 +58,7 @@ function AboutMe({fadeLan, changeLan}) {
           always aim to make my projects responsive, with clean, well-structured code`}
           </p>
 
-          <p id="conclusion" className={`text-xl mt-10 transition-opacity duration-300`}>
+          <p id="conclusion" className="text-xl mt-10">
 
           {changeLan == "es" ? 
           `Por último, me llama mucho la atención el back-end. Creo que aprenderlo me puede ayudar a ser más completo como desarrollador y también a 
@@ -72,7 +72,7 @@ function AboutMe({fadeLan, changeLan}) {
 
         </div>
 
-        <div id="tecnologies-div" className={`mt-10 flex flex-col items-center transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
+        <div id="tecnologies-div" className="mt-10 flex flex-col items-center">
           <h2 id="tecnologies-title" className="text-4xl">{changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
 
           <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-15 space-around">
