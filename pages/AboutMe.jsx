@@ -18,7 +18,7 @@ const svgData = [
 function AboutMe({fadeLan, changeLan}) {
   return (
     <main>
-      <h1 id="username" className="text-center text-5xl mt-10 underline">David Aranzana</h1>
+      <h1 id="username" className="text-center text-5xl mt-10">David Aranzana</h1>
 
       <section className="grid grid-cols-2">
 
@@ -75,7 +75,7 @@ function AboutMe({fadeLan, changeLan}) {
         <div id="tecnologies-div" className={`mt-10 flex flex-col items-center transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
           <h2 id="tecnologies-title" className="text-4xl">{changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
 
-          <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-10 space-around">
+          <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-15 space-around">
 
             {svgData.map((svg) => (
               <SVG src={svg.src} key={svg.alt} alt={svg.alt}/>
