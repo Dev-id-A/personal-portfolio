@@ -13,9 +13,15 @@ function Contact({fadeLan, changeLan}) {
 
           <div id="social-media-section" className="mt-20 flex flex-cols justify-center gap-10 text-4xl">
 
-              <SocialButton d={paths.github} alt={"Github"} color={"#000000"} ml={"10"} w={"80"} iconSize={"24"}/>
+            <div className="flex w-80 p-5 items-center border rounded-xl">
+              <SVG2 d={paths.github}></SVG2>
+              <h2 className="ml-10">Github</h2>
+            </div>
 
-              <SocialButton d={paths.linkedin} alt={"LinkedIn"} color={"#000000"} ml={"10"} w={"80"} iconSize={"24"}/>
+            <div className="flex w-80 p-5 items-center border rounded-xl">
+              <SVG2 d={paths.linkedin}></SVG2>
+              <h2 className="ml-10">LinkedIn</h2>
+            </div>
 
           </div>
 
