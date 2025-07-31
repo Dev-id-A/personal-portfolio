@@ -1,18 +1,20 @@
-import SVG from "../src/assets/SVG"
+import SVG from "../src/assets/SVG/SVG"
+import {paths} from "../src/assets/SVG/Paths"
+
 
 const svgData = [
-  {src: "html5", alt: "HTML"},
-  {src: "css", alt: "CSS"},
-  {src: "javascript", alt: "JavaScript"},
-  {src: "typescript", alt: "TypeScript"},
-  {src: "react", alt: "React"},
-  {src: "nodedotjs", alt: "Node.js"},
-  {src: "bootstrap", alt: "Bootstrap"},
-  {src: "jquery", alt: "jQuery"},
-  {src: "sass", alt: "SASS"},
-  {src: "tailwindcss", alt: "TailwindCSS"},
-  {src: "d3", alt: "D3.js"},
-  {src: "postgresql", alt: "PostgreSQL"}
+  {src: paths.html, alt: "HTML"},
+  {src: paths.css, alt: "CSS"},
+  {src: paths.javascript, alt: "JavaScript"},
+  {src: paths.typescript, alt: "TypeScript"},
+  {src: paths.react, alt: "React"},
+  {src: paths.node, alt: "Node.js"},
+  {src: paths.bootstrap, alt: "Bootstrap"},
+  {src: paths.jquery, alt: "jQuery"},
+  {src: paths.sass, alt: "SASS"},
+  {src: paths.tailwind, alt: "TailwindCSS"},
+  {src: paths.d3, alt: "D3.js"},
+  {src: paths.postgre, alt: "PostgreSQL"}
 ]
 
 function AboutMe({fadeLan, changeLan}) {
@@ -78,7 +80,7 @@ function AboutMe({fadeLan, changeLan}) {
           <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-15 space-around">
 
             {svgData.map((svg) => (
-              <SVG src={svg.src} key={svg.alt} alt={svg.alt}/>
+              <SVG d={svg.src} key={svg.alt} alt={svg.alt}/>
             ))}
             
           </div>

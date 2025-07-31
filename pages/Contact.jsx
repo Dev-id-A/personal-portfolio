@@ -1,6 +1,5 @@
-import Label from "../src/assets/Label"
-import SVG2 from "../src/assets/SVG2"
-import {paths} from "../src/assets/Paths"
+import Label from "../src/assets/Contact Page/Label"
+import SVG2 from "../src/assets/SVG/SVG2"
 
 function Contact({fadeLan, changeLan}) {
   return (
@@ -14,12 +13,12 @@ function Contact({fadeLan, changeLan}) {
         <div id="social-media-section" className="mt-20 flex flex-cols justify-center gap-10 text-4xl">
 
             <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.github}></SVG2>
+              <SVG2 d={paths.github} color={"#000000"}></SVG2>
               <h2 className="ml-10">Github</h2>
             </div>
 
             <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.linkedin}></SVG2>
+              <SVG2 d={paths.linkedin} color={"#000000"}></SVG2>
               <h2 className="ml-10">LinkedIn</h2>
             </div>
 
