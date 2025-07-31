@@ -54,7 +54,7 @@ function AboutMe({fadeLan, changeLan}) {
 
           //EN version
           `Most of my projects are part of the freeCodeCamp certifications. Each one has been an opportunity to learn, improve my skills, 
-          and discover how exciting web development can be.projects have also helped me face real challenges and find practical solutions. I 
+          and discover how exciting web development can be. Projects have also helped me face real challenges and find practical solutions. I 
           always aim to make my projects responsive, with clean, well-structured code`}
           </p>
 
@@ -65,7 +65,7 @@ function AboutMe({fadeLan, changeLan}) {
           entender mejor todo lo que hay detrás de una aplicación. Ahora mismo estoy metiéndome con bases de datos usando PostgreSQL. Tengo muchas ganas de 
           seguir creciendo y empezar a trabajar con un buen equipo.`:
           `Finally, I’m really interested in back-end development. I believe learning it will help me become a more well-rounded developer and also better 
-          understand everything behind an application.Right now, I’m diving into databases using PostgreSQL. I’m eager to keep growing and start working 
+          understand everything behind an application. Right now, I’m diving into databases using PostgreSQL. I’m eager to keep growing and start working 
           with a great team.`}
           
           </p>
