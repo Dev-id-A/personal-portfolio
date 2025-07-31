@@ -1,44 +1,36 @@
-import Label from "../src/assets/Contact Page/Label"
-import SVG2 from "../src/assets/SVG/SVG2"
+import Label from "../src/assets/ContactPage/Label"
+import {paths} from "../src/assets/SVG/Paths"
+import SocialButton from "../src/assets/ContactPage/SocialButton"
 
 function Contact({fadeLan, changeLan}) {
   return (
     <main id="contact-main" className={`grid grid-cols-2 gap-20 px-30 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
 
 
-    <section className="mt-10">
-        <h1 id="contact-title" className="text-5xl text-center mt-10 ">{changeLan == "es" ? "Contáctame":"Get in touch"}</h1>
+      <section className="mt-10">
+          <h1 id="contact-title" className="text-5xl text-center mt-10 ">{changeLan == "es" ? "Contáctame":"Get in touch"}</h1>
 
 
-        <div id="social-media-section" className="mt-20 flex flex-cols justify-center gap-10 text-4xl">
+          <div id="social-media-section" className="mt-20 flex flex-cols justify-center gap-10 text-4xl">
 
-            <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.github} color={"#000000"}></SVG2>
-              <h2 className="ml-10">Github</h2>
-            </div>
+              <SocialButton d={paths.github} alt={"Github"} color={"#000000"} ml={"10"} w={"80"} iconSize={"24"}/>
 
-            <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.linkedin} color={"#000000"}></SVG2>
-              <h2 className="ml-10">LinkedIn</h2>
-            </div>
+              <SocialButton d={paths.linkedin} alt={"LinkedIn"} color={"#000000"} ml={"10"} w={"80"} iconSize={"24"}/>
 
-        </div>
+          </div>
 
-        <div className="grid justify-center text-4xl mt-15">
-        <h2 className="mt-20 text-center ">Puedes contactarme también a través de:</h2>
+          <div className="grid justify-center text-4xl mt-15">
+          <h2 className="mt-20 text-center">{changeLan =="es" ? "Puedes contactarme también a través de:":"You can also contact me through:"}</h2>
 
-            <div className="flex mt-15 w-160 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.linkedin}></SVG2>
-              <h2 className="ml-20">email@cualsea.com</h2>
-            </div>
+              <SocialButton d={paths.gmail} alt={"email@cualsea.com"} color={"#000000"} w={"160"} h={"30"} ml={"10"} mt={"15"} iconSize={"18"}/>
 
-        </div>
-    </section>
+          </div>
+      </section>
 
       <form name="contact" className="w-200 h-200 mt-20 border rounded-lg py-10 px-10 flex flex-col">
 
-        <h1 className="text-center text-2xl">Contáctame mediante el siguiente formulario</h1>
-        <h2 className="text-center text-l">Las solicitudes serán enviadas a mi email</h2>
+        <h1 className="text-center text-2xl">{changeLan == "es" ? "Contáctame mediante el siguiente formulario.":"Get in touch through the form below."}</h1>
+        <h2 className="text-center text-l">{changeLan == "es" ? "Las solicitudes serán enviadas a mi email.":"Request are sent to my email."}</h2>
 
         <Label>{changeLan =="es" ? "Nombre:":"Name:"}</Label>
         <input className="text-xl w-full h-15 px-3 border" type="text" placeholder={changeLan == "es" ? "Tu nombre":"Your name"}/>
