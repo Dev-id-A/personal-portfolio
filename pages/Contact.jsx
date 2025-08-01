@@ -13,22 +13,16 @@ function Contact({fadeLan, changeLan}) {
 
           <div id="social-media-section" className="mt-20 flex flex-cols justify-center gap-10 text-4xl">
 
-            <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.github}></SVG2>
-              <h2 className="ml-10">Github</h2>
-            </div>
+            <SocialButton d={paths.github} alt={"Github"} mainDiv={"w-100 h-30 mt-15"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
 
-            <div className="flex w-80 p-5 items-center border rounded-xl">
-              <SVG2 d={paths.linkedin}></SVG2>
-              <h2 className="ml-10">LinkedIn</h2>
-            </div>
+            <SocialButton d={paths.linkedin} alt={"LinkedIn"} mainDiv={"w-100 h-30 mt-15"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
 
           </div>
 
           <div className="grid justify-center text-4xl mt-15">
           <h2 className="mt-20 text-center">{changeLan =="es" ? "Puedes contactarme también a través de:":"You can also contact me through:"}</h2>
 
-              <SocialButton d={paths.gmail} alt={"email@cualsea.com"} color={"#000000"} w={"160"} h={"30"} ml={"10"} mt={"15"} iconSize={"18"}/>
+              <SocialButton d={paths.gmail} alt={"email@cualsea.com"}  mainDiv={"w-160 h-30 mt-15"} altContainer={"ml-25"} svgContainer={"size-18 color-[#000000]"}/>
 
           </div>
       </section>
