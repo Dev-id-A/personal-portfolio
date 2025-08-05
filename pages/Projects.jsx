@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Project from "../src/assets/Project/Project";
+import { ProjectData } from "../src/assets/Project/ProjectData";
 
 function Projects({fadeLan, changeLan }) {
   const [certifications, setCertifications] = useState(false)
@@ -23,14 +24,20 @@ function Projects({fadeLan, changeLan }) {
             <button className="border hover:cursor-pointer rounded-2xl p-3">Data visualization</button>
           </div>
 
-
-      <section id="projects-section" className="grid grid-cols-6 place-items-center mt-20 gap-6">
+          <section className="grid grid-cols-3 gap-30">
+           {ProjectData.map((project, i)=>
+              <Project key={i} projectName={project.alt} src={project.src} 
+              githubLink={project.githubLink} pagesLink={project.pagesLink} 
+              changeLan={changeLan} divClass={i === ProjectData.length - 1 && ProjectData.length % 3 == 1 ? "col-span-1 col-start-2":"" }/>
+           )}
+           </section>
+      {/* <section id="projects-section" className="grid grid-cols-6 place-items-center mt-20 gap-6">
         <Project changeLan={changeLan} divClass={"col-span-2"}></Project>
         <Project divClass={"col-span-2"}></Project>
         <Project divClass={"col-span-2"}></Project>
         <Project divClass={"col-span-3"}></Project>
         <Project divClass={"col-span-3"}></Project>
-      </section>
+      </section> */}
       
       
     </main>
