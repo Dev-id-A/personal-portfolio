@@ -1,6 +1,6 @@
 export const ProjectData = [
     {src: "src/assets/Project/ProjectsImg/random-quote-machine.png", alt: "Random quote machine", descriptionES: "", descriptionEN:"", type:"Front end", githubLink: "https://github.com/Dev-id-A/random-quote-machine", pagesLink:"https://dev-id-a.github.io/random-quote-machine/",},
-    {src: "src/assets/Project/ProjectsImg/markdown-previewer.png", alt: "Markdown previewer", descriptionES: "", descriptionEN:"", type:"", githubLink: "https://github.com/Dev-id-A/markdown-previewer", pagesLink:"https://dev-id-a.github.io/markdown-previewer/",},
+    {src: "src/assets/Project/ProjectsImg/markdown-previewer.png", alt: "Markdown previewer", descriptionES: "", descriptionEN:"", type:"Front end", githubLink: "https://github.com/Dev-id-A/markdown-previewer", pagesLink:"https://dev-id-a.github.io/markdown-previewer/",},
     {src: "src/assets/Project/ProjectsImg/drum-machine.png", alt: "Drum machine", descriptionES: "", descriptionEN:"", type:"Front end", githubLink: "https://github.com/Dev-id-A/drum-machine", pagesLink:"https://dev-id-a.github.io/drum-machine/",},
     {src: "src/assets/Project/ProjectsImg/calculator.png", alt: "Calculator", descriptionES: "", descriptionEN:"", type:"Front end", githubLink: "https://github.com/Dev-id-A/calculator", pagesLink:"https://dev-id-a.github.io/calculator/",},
     {src: "src/assets/Project/ProjectsImg/25-5-clock.png", alt: "Random quote machine", descriptionES: "", descriptionEN:"", type:"Front end", githubLink: "https://github.com/Dev-id-A/25-5-clock", pagesLink:"https://dev-id-a.github.io/25-5-clock/",},
@@ -8,6 +8,5 @@ export const ProjectData = [
     {src: "src/assets/Project/ProjectsImg/scatterplot-graph.png", alt: "Scatterplot graph", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/scatterplot-graph", pagesLink:"https://dev-id-a.github.io/scatterplot-graph/",},
     {src: "src/assets/Project/ProjectsImg/heat-map.png", alt: "Heat map", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/heat-map", pagesLink:"https://dev-id-a.github.io/heat-map/",},
     {src: "src/assets/Project/ProjectsImg/choropleth-map.png", alt: "Choropleth map", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/choropleth-map", pagesLink:"https://dev-id-a.github.io/choropleth-map/",},
-    {src: "src/assets/Project/ProjectsImg/treemap-diagram.png", alt: "Treemap diagram", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/treemap-diagram", pagesLink:"https://dev-id-a.github.io/treemap-diagram/",},
     {src: "src/assets/Project/ProjectsImg/treemap-diagram.png", alt: "Treemap diagram", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/treemap-diagram", pagesLink:"https://dev-id-a.github.io/treemap-diagram/",}
 ];
