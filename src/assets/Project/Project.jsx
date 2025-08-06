@@ -1,7 +1,7 @@
 function Project({projectName, description, divClass, changeLan, src, githubLink, pagesLink}) {
   return (
-    <div id="project" className={`border h-150 w-full p-5 rounded-xl ${divClass}`}>
-        <img src={src} className="flex border h-70 w-full self-center"/>
+    <div id="project" className={`border h-150 w-full p-5 rounded-xl col-span-2 ${divClass}`}>
+        <img src={src} className="mx-auto border h-70 w-120"/>
         <h1 className="text-center text-3xl mt-5">{projectName}</h1>
         <p className="p-8 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda reiciendis dolorum iusto totam sit delectus magni qui sed et autem velit, consectetur officia culpa eius saepe ratione temporibus voluptas?</p>
 

@@ -8,5 +8,6 @@ export const ProjectData = [
     {src: "src/assets/Project/ProjectsImg/scatterplot-graph.png", alt: "Scatterplot graph", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/scatterplot-graph", pagesLink:"https://dev-id-a.github.io/scatterplot-graph/",},
     {src: "src/assets/Project/ProjectsImg/heat-map.png", alt: "Heat map", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/heat-map", pagesLink:"https://dev-id-a.github.io/heat-map/",},
     {src: "src/assets/Project/ProjectsImg/choropleth-map.png", alt: "Choropleth map", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/choropleth-map", pagesLink:"https://dev-id-a.github.io/choropleth-map/",},
+    {src: "src/assets/Project/ProjectsImg/treemap-diagram.png", alt: "Treemap diagram", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/treemap-diagram", pagesLink:"https://dev-id-a.github.io/treemap-diagram/",},
     {src: "src/assets/Project/ProjectsImg/treemap-diagram.png", alt: "Treemap diagram", descriptionES: "", descriptionEN:"", type:"Data visualization", githubLink: "https://github.com/Dev-id-A/treemap-diagram", pagesLink:"https://dev-id-a.github.io/treemap-diagram/",}
 ];
