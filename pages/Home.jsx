@@ -4,7 +4,7 @@ import Hero from '../src/assets/Hero/Hero';
 function Home({fadeLan, changeLan}) {
 
   return (
-    <main className="">
+    <main>
     <Hero changeLan={changeLan} fadeLan={fadeLan}></Hero>
     </main>
   )

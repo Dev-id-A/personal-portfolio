@@ -1,11 +1,10 @@
-import React from 'react'
-import NavbarLink from './NavbarLink'
+import NavbarLink from './NavbarLink';
 
 function Navbar({changeLan, fadeLan, toggleLan}) {
   return (
     <div className="flex items-center justify-end gap-10 px-20
                     w-full h-20 text-2xl">
-        <h1 id="name-navbar" className="mr-auto text-3xl">Dev-id</h1>
+        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-40 mr-auto mt-10" />
 
           <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 
