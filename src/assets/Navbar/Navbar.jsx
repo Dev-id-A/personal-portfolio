@@ -4,7 +4,7 @@ function Navbar({changeLan, fadeLan, toggleLan}) {
   return (
     <div className="flex items-center justify-end gap-10 px-20
                     w-full h-20 text-2xl">
-        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-40 mr-auto mt-10" />
+        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-55 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
           <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 

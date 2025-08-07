@@ -21,9 +21,9 @@ function AboutMe({fadeLan, changeLan}) {
   return (
     <main className={`px-10 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
 
-      <h1 id="name" className="text-center text-5xl mt-10 transition-all drop-shadow-[0_0_30px_red] 
-      hover:cursor-default hover:drop-shadow-[0_0_10px_red] hover:text-gray-500">
-        David Aranzana</h1>
+      <h1 id="name" className="mx-auto text-5xl mt-10 w-fit transition-all drop-shadow-[0_0_30px_white] 
+      hover:cursor-default hover:drop-shadow-[0_0_10px_white] hover:text-[#48D1CC]">
+        David Aranzana Medina</h1>
 
       <section className="grid grid-cols-2">
 
