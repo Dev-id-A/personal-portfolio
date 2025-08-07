@@ -3,30 +3,34 @@ import {paths} from "../src/assets/SVG/Paths"
 
 
 const svgData = [
-  {src: paths.html, alt: "HTML"},
-  {src: paths.css, alt: "CSS"},
-  {src: paths.javascript, alt: "JavaScript"},
-  {src: paths.typescript, alt: "TypeScript"},
-  {src: paths.react, alt: "React"},
-  {src: paths.node, alt: "Node.js"},
-  {src: paths.bootstrap, alt: "Bootstrap"},
-  {src: paths.jquery, alt: "jQuery"},
-  {src: paths.sass, alt: "SASS"},
-  {src: paths.tailwind, alt: "TailwindCSS"},
-  {src: paths.d3, alt: "D3.js"},
-  {src: paths.postgre, alt: "PostgreSQL"}
+  {src: paths.html, alt: "HTML", color: "#E34F26"},
+  {src: paths.css, alt: "CSS", color: "#1572B6"},
+  {src: paths.javascript, alt: "JavaScript", color: "#F7DF1E"},
+  {src: paths.typescript, alt: "TypeScript", color: "#3178C6"},
+  {src: paths.react, alt: "React", color: "#61DAFB"},
+  {src: paths.node, alt: "Node.js", color: "#339933"},
+  {src: paths.bootstrap, alt: "Bootstrap", color: "#7952B3"},
+  {src: paths.jquery, alt: "jQuery", color: "#0769AD"},
+  {src: paths.sass, alt: "SASS", color: "#CC6699"},
+  {src: paths.tailwind, alt: "TailwindCSS", color: "#06B6D4"},
+  {src: paths.d3, alt: "D3.js", color: "#F9A03C"},
+  {src: paths.postgre, alt: "PostgreSQL", color: "#336791"}
 ]
 
 function AboutMe({fadeLan, changeLan}) {
   return (
-    <main className={`transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
-      <h1 id="username" className="text-center text-5xl mt-10">David Aranzana</h1>
+    <main className={`px-10 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
+
+      <h1 id="name" className="text-center text-5xl mt-10 transition-all drop-shadow-[0_0_30px_red] 
+      hover:cursor-default hover:drop-shadow-[0_0_10px_red] hover:text-gray-500">
+        David Aranzana</h1>
 
       <section className="grid grid-cols-2">
 
-        <div id="about-me-text" className="text-justify px-30 mt-10">
+        <div id="about-me-text" className="group text-justify py-10 px-30 mt-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_5px_1px_white]">
 
-          <h2 id="about-me-title" className="text-center text-4xl">{changeLan == "es" ? "Sobre mí":"About me"}</h2>
+          <h2 id="about-me-title" className="group-hover:text-white transition-colors duration-500 text-center text-4xl">
+            {changeLan == "es" ? "Sobre mí":"About me"}</h2>
 
           <p id="presentation" className={`text-xl mt-10 transition-opacity duration-300`}>
 
@@ -74,13 +78,15 @@ function AboutMe({fadeLan, changeLan}) {
 
         </div>
 
-        <div id="tecnologies-div" className="mt-10 flex flex-col items-center">
-          <h2 id="tecnologies-title" className="text-4xl">{changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
+        <div id="tecnologies-div" className="group/div mt-10 flex flex-col items-center py-10
+        transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_5px_1px_white]">
+          <h2 id="tecnologies-title" className="group-hover/div:text-white transition-colors duration-500 text-4xl">
+          {changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
 
           <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-15 space-around">
 
             {svgData.map((svg) => (
-              <SVG d={svg.src} key={svg.alt} alt={svg.alt}/>
+              <SVG d={svg.src} key={svg.alt} alt={svg.alt} color={svg.color}/>
             ))}
             
           </div>
