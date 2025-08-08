@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 
 function Layout({changeLan, fadeLan, toggleLan}) {
   return (
-    <div className="text-white bg-gradient-to-b from-[#0B1120] to-[#483D8B] min-h-screen">
+    <div className="font-urbanist text-white bg-gradient-to-b from-[#0B1120] to-[#483D8B] min-h-screen">
         <Navbar changeLan={changeLan} fadeLan={fadeLan} toggleLan={toggleLan} />
         <Outlet />
     </div>

@@ -5,7 +5,7 @@ function Hero({changeLan, fadeLan}) {
     <main id="hero-main" className={`grid grid-cols-1 place-items-center mt-20 transition-opacity duration-300" ${fadeLan ? "opacity-0":"opacity-100"}`}>
         <img className="size-100 border" alt="David Aranzana" id="presentation-img"></img>
         <h1 id="presentation" className="mt-10 text-5xl">
-            {changeLan == "es" ? "¡Hola! Soy David Aranzana, un desarrollador Front-end":
+            {changeLan == "es" ? "¡Hola! Soy David Aranzana, desarrollador Front-end":
             "Hi! I'm David Aranzana, Front-end developer"}
         </h1>
 
