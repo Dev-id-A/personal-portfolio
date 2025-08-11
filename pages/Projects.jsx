@@ -16,9 +16,12 @@ function Projects({fadeLan, changeLan }) {
 
   return (
     <main id="projects-main" className={`px-20 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
-      <h1 id="projects-title" className="text-center text-5xl mt-10">{changeLan == "es" ? "Proyectos":"Projects"}</h1>
+      <h1 id="projects-title" className={`mx-auto text-5xl mt-15 w-fit relative hover:scale-110 hover:cursor-default
+      after:content-[""] after:origin-center after:absolute after:block after:scale-x-0 after:bg-white
+      after:h-[2px] after:w-full after:transition-transform after:duration-300 hover:after:scale-x-105
+      transition-all duration-300`}>{changeLan == "es" ? "Mis proyectos":"My projects"}</h1>
       
-        <section id="project-btn-section" className="flex flex-cols justify-center mt-30 gap-20 text-center text-3xl">
+        <section id="project-btn-section" className="flex flex-cols justify-center mt-20 gap-20 text-center text-3xl">
 
           <button id="all" className="border hover:cursor-pointer hover:scale-110 hover:text-blue-500 rounded-2xl p-3
           transition-transform duration-300" 
