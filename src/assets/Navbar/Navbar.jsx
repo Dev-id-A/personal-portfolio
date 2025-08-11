@@ -2,7 +2,7 @@ import NavbarLink from './NavbarLink';
 
 function Navbar({changeLan, fadeLan, toggleLan}) {
   return (
-    <div className="flex items-center justify-end gap-10 px-20
+    <div className="flex items-center justify-end gap-10 px-15
                     w-full h-20 text-2xl">
         <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-55 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
 

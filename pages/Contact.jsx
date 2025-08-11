@@ -1,4 +1,3 @@
-import Label from "../src/assets/ContactPage/Label"
 import {paths} from "../src/assets/SVG/Paths"
 import SocialButton from "../src/assets/ContactPage/SocialButton"
 
@@ -27,21 +26,45 @@ function Contact({fadeLan, changeLan}) {
           </div>
       </section>
 
-      <form name="contact" className="w-200 h-200 mt-20 border rounded-lg py-10 px-10 flex flex-col bg-[#1e2c51ff]
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" 
+      className="w-220 h-200 mt-20 border rounded-lg py-10 px-10 flex flex-col bg-[#1e2c51ff]
       transition-all hover:drop-shadow-[0_0_10px_white]">
 
-        <h1 className="text-center text-2xl">{changeLan == "es" ? "Contáctame mediante el siguiente formulario.":"Get in touch through the form below."}</h1>
-        <h2 className="text-center text-l">{changeLan == "es" ? "Las solicitudes serán enviadas a mi email.":"Request are sent to my email."}</h2>
+        {/*Hidden form for bots*/}
+        <input type="hidden" name="form-name" value="contact"/>
+        <p className="hidden">
+          <label>
+            Don't fill this: <input name="bot-field" type="text"/>
+          </label>
+        </p>
 
-        <Label>{changeLan =="es" ? "Nombre:":"Name:"}</Label>
-        <input className="text-l w-full h-15 px-3 border bg-[#7E77B0]" type="text" placeholder={changeLan == "es" ? "Tu nombre":"Your name"}/>
 
-        <Label>{changeLan =="es" ? "Email:":"Email:"}</Label>
-        <input className="text-l w-full h-15 px-3 border bg-[#7E77B0]" type="email" placeholder={changeLan =="es" ? "Pontu@email.aqui":"Putyour@email.here"}/>
+        <h1 className="text-center text-2xl">
+          {changeLan == "es" ? "Contáctame mediante el siguiente formulario.":"Get in touch through the form below."}
+        </h1>
+        <h2 className="text-center text-l">
+          {changeLan == "es" ? "Las solicitudes serán enviadas a mi email.":"Request are sent to my email."}
+        </h2>
 
-        <Label>{changeLan =="es" ? "Solicitud:":"Resquest:"}</Label>
-        <textarea className="text-xl w-full min-h-100 p-3 border bg-[#7E77B0]" name="message" id="contact-message" 
-        placeholder={changeLan == "es" ? "Hazme una pagina Vite+React...":"Make me a page with Vite+React..."}></textarea>
+        <div className="mt-5">
+          <label>{changeLan =="es" ? "Nombre:":"Name:"}</label>
+          <input name="name" className="text-xl w-full h-15 px-3 border bg-[#7E77B0]" type="text" required
+          placeholder={changeLan == "es" ? "Tu nombre":"Your name"}/>
+        </div>
+
+        <div className="mt-5">
+          <label className="mt-5">
+            {changeLan =="es" ? "Email:":"Email:"}
+          </label>
+          <input className="text-xl w-full h-15 px-3 border bg-[#7E77B0]" name="email" type="email" required
+          placeholder={changeLan =="es" ? "Pontu@email.aqui":"Putyour@email.here"}/>
+        </div>
+
+        <div className="mt-5">
+          <label className="mt-5">{changeLan =="es" ? "Solicitud:":"Request:"}</label>
+          <textarea className="text-xl w-full min-h-90 p-3 border bg-[#7E77B0]" name="message" id="contact-message" required 
+          placeholder={changeLan == "es" ? "Hazme una pagina Vite+React...":"Make me a page with Vite+React..."}></textarea>
+        </div>
 
         <button type="submit" className="text-l border w-30 h-15 mt-10 self-center 
         transition-all duration-300 hover:scale-110 hover:shadow-[0_0_3px_3px_white] hover:cursor-pointer bg-blue-900">
