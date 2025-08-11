@@ -4,7 +4,7 @@ function Hero({changeLan, fadeLan}) {
   return (
     <main id="hero-main" className={`grid grid-cols-1 place-items-center mt-20 transition-opacity duration-300" ${fadeLan ? "opacity-0":"opacity-100"}`}>
         <img className="size-100 border" alt="David Aranzana" id="presentation-img"></img>
-        <h1 id="presentation" className="mt-10 text-5xl">
+        <h1 id="presentation" className="only-md:bg-black mt-10 text-5xl">
             {changeLan == "es" ? "¡Hola! Soy David Aranzana, desarrollador Front-end":
             "Hi! I'm David Aranzana, Front-end developer"}
         </h1>
@@ -17,7 +17,7 @@ function Hero({changeLan, fadeLan}) {
           give my best in every project, ensuring everything runs smoothly, is accessible, and responsive.`}
           </h2>
 
-          <section id="btn-section" className="grid grid-cols-3 gap-20 mt-18">
+          <section id="btn-section" className="grid grid-cols-3 gap-20 mt-18 pb-10">
 
             <HeroBtn  to="aboutMe">{changeLan == "es" ? "Sobre mí":"About me"}</HeroBtn>
             <HeroBtn  to="projects">{changeLan == "es" ? "Proyectos":"Projects"}</HeroBtn>

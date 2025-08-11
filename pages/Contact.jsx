@@ -39,34 +39,34 @@ function Contact({fadeLan, changeLan}) {
         </p>
 
 
-        <h1 className="text-center text-2xl">
+        <h1 className="text-center text-3xl">
           {changeLan == "es" ? "Contáctame mediante el siguiente formulario.":"Get in touch through the form below."}
         </h1>
-        <h2 className="text-center text-l">
+        <h2 className="text-center text-xl">
           {changeLan == "es" ? "Las solicitudes serán enviadas a mi email.":"Request are sent to my email."}
         </h2>
 
-        <div className="mt-5">
+        <div className="mt-5 text-xl">
           <label>{changeLan =="es" ? "Nombre:":"Name:"}</label>
           <input name="name" className="text-xl w-full h-15 px-3 border bg-[#7E77B0]" type="text" required
           placeholder={changeLan == "es" ? "Tu nombre":"Your name"}/>
         </div>
 
         <div className="mt-5">
-          <label className="mt-5">
+          <label className="mt-5 text-xl">
             {changeLan =="es" ? "Email:":"Email:"}
           </label>
           <input className="text-xl w-full h-15 px-3 border bg-[#7E77B0]" name="email" type="email" required
           placeholder={changeLan =="es" ? "Pontu@email.aqui":"Putyour@email.here"}/>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 text-xl">
           <label className="mt-5">{changeLan =="es" ? "Solicitud:":"Request:"}</label>
-          <textarea className="text-xl w-full min-h-90 p-3 border bg-[#7E77B0]" name="message" id="contact-message" required 
+          <textarea className="text-xl w-full min-h-80 p-3 border bg-[#7E77B0]" name="message" id="contact-message" required 
           placeholder={changeLan == "es" ? "Hazme una pagina Vite+React...":"Make me a page with Vite+React..."}></textarea>
         </div>
 
-        <button type="submit" className="text-l border w-30 h-15 mt-10 self-center 
+        <button type="submit" className="text-2xl border w-30 mt-10 self-center 
         transition-all duration-300 hover:scale-110 hover:shadow-[0_0_3px_3px_white] hover:cursor-pointer bg-blue-900">
           {changeLan =="es" ? "Enviar":"Submit"}</button>
       </form>

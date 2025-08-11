@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./App.css"
 import { Route, Routes } from 'react-router-dom'
 import Layout from "../pages/Layout"
@@ -8,8 +8,17 @@ import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
 
 function App() {
-    const [changeLan, setChangeLan] = useState("es")
-    const [fadeLan, setFadeLan] = useState(false)
+    const [changeLan, setChangeLan] = useState("es");
+    const [fadeLan, setFadeLan] = useState(false);
+    const [navbarBg, setNavbarBg] = useState(false)
+
+    useEffect(() =>{
+      const windowScroll = () => setNavbarBg(window.scrollY > 10)
+        window.addEventListener("scroll", windowScroll);
+        return () => window.removeEventListener("scroll", windowScroll)
+    }
+    ,[])
+    
 
     const toggleLan = () => {
         setFadeLan(true)
@@ -17,12 +26,12 @@ function App() {
         changeLan == "es" ? setChangeLan("en"):setChangeLan("es")
         setFadeLan(false)
         }, 200)
-    }
+    };
 
   return (
     <>
     <Routes>
-      <Route path="/" element={<Layout {...{changeLan, fadeLan, toggleLan}} />}>
+      <Route path="/" element={<Layout {...{changeLan, fadeLan, toggleLan, navbarBg}} />}>
 
           <Route index element={<Home {...{changeLan, fadeLan}} />} />
           <Route path="aboutMe" element={<AboutMe {...{changeLan, fadeLan}} />} />
