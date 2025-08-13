@@ -10,7 +10,7 @@ import Contact from "../pages/Contact"
 function App() {
     const [changeLan, setChangeLan] = useState("es");
     const [fadeLan, setFadeLan] = useState(false);
-    const [navbarBg, setNavbarBg] = useState(false)
+    const [navbarBg, setNavbarBg] = useState(false);
 
     useEffect(() =>{
       const windowScroll = () => setNavbarBg(window.scrollY > 10)

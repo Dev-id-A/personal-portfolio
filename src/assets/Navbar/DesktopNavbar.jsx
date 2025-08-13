@@ -2,10 +2,11 @@ import NavbarLink from './NavbarLink';
 
 function DesktopNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
   return (
-    <div className={`flex items-center text-lg justify-end px-3 w-full h-20 fixed z-50 top-0 
+    <div className={`hidden items-center text-lg justify-end px-3 w-full h-20 fixed z-50 top-0 
     ${navbarBg ? " animation-all duration-500 bg-[#0b1120a6] backdrop-blur-md":""} 
-    lg:text-2xl xl:gap-10 xl:px-15
-
+    xl:gap-10 xl:px-15
+    lg:text-2xl 
+    sm:flex
     `}>
         <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="md:size-55 size-30 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
