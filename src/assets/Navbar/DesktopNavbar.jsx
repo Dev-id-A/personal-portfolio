@@ -1,13 +1,13 @@
 import NavbarLink from './NavbarLink';
 
-function Navbar({changeLan, fadeLan, toggleLan, navbarBg}) {
+function DesktopNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
   return (
     <div className={`flex items-center text-lg justify-end px-3 w-full h-20 fixed z-50 top-0 
     ${navbarBg ? " animation-all duration-500 bg-[#0b1120a6] backdrop-blur-md":""} 
     lg:text-2xl xl:gap-10 xl:px-15
 
     `}>
-        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-55 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
+        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="md:size-55 size-30 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
           <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 
@@ -33,4 +33,4 @@ function Navbar({changeLan, fadeLan, toggleLan, navbarBg}) {
   )
 }
 
-export default Navbar
+export default DesktopNavbar
