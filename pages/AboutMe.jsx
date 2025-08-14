@@ -19,20 +19,24 @@ const svgData = [
 
 function AboutMe({fadeLan, changeLan}) {
   return (
-    <main className={`px-10 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
+    <main className={`px-5 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}
+    xl:px-10`}>
 
-      <h1 id="name" className="mx-auto text-5xl mt-10 w-fit transition-all drop-shadow-[0_0_30px_white] 
+      <h1 id="name" className="mx-auto text-center text-5xl mt-10 w-fit transition-all drop-shadow-[0_0_30px_white] 
       hover:cursor-default hover:drop-shadow-[0_0_10px_white] hover:text-[#48D1CC]">
         David Aranzana Medina</h1>
 
-      <section className="grid grid-cols-2">
+      <section className="grid grid-cols-1
+      xl:grid-cols-2">
 
-        <div id="about-me-text" className="group text-justify py-10 px-30 mt-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_5px_1px_white]">
+        <div id="about-me-text" 
+        className="group text-justify py-10 px-1 mt-10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_5px_1px_white]
+        xl:px-30">
 
           <h2 id="about-me-title" className="group-hover:text-white transition-colors duration-500 text-center text-4xl">
             {changeLan == "es" ? "Sobre mí":"About me"}</h2>
 
-          <p id="presentation" className={`text-xl mt-10 transition-opacity duration-300`}>
+          <p id="presentation" className={`text-md md:text-xl mt-10 transition-opacity duration-300`}>
 
           {changeLan == "es"? 
           //ES version
@@ -48,7 +52,7 @@ function AboutMe({fadeLan, changeLan}) {
           the day-to-day work of a developer.`}
           </p>
 
-          <p id="projects" className={`text-xl mt-10 transition-opacity duration-300`}>
+          <p id="projects" className={`text-md md:text-xl mt-10 transition-opacity duration-300`}>
 
           {changeLan == "es" ? 
 
@@ -64,7 +68,7 @@ function AboutMe({fadeLan, changeLan}) {
           always aim to make my projects responsive, with clean, well-structured code`}
           </p>
 
-          <p id="conclusion" className="text-xl mt-10">
+          <p id="conclusion" className="text-md md:text-xl mt-10">
 
           {changeLan == "es" ? 
           `Por último, me llama mucho la atención el back-end. Creo que aprenderlo me puede ayudar a ser más completo como desarrollador y también a 
@@ -78,12 +82,14 @@ function AboutMe({fadeLan, changeLan}) {
 
         </div>
 
-        <div id="tecnologies-div" className="group/div mt-10 flex flex-col items-center py-10
+        <div id="tecnologies-div" className="group/div mt-0 md:mt-10 flex flex-col items-center py-10
         transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_5px_1px_white]">
           <h2 id="tecnologies-title" className="group-hover/div:text-white transition-colors duration-500 text-4xl">
           {changeLan == "es" ? "Tecnologías":"Tecnologies"}</h2>
 
-          <div id="technologies-icons" className="grid grid-cols-3 gap-20 mt-15 space-around">
+          <div id="technologies-icons" className="grid grid-cols-3 gap-15 mt-15 mb-5 space-around
+          xl:grid-cols-3
+          sm:grid-cols-4 sm:gap-20">
 
             {svgData.map((svg) => (
               <SVG d={svg.src} key={svg.alt} alt={svg.alt} color={svg.color}/>
