@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import NavbarLink from './NavbarLink';
+import Hamburger from './Hamburger';
+import XButton from './XButton';
 
 function MobileNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
   const [displayNavbar, setDisplayNavbar] = useState(false)
@@ -11,7 +13,7 @@ function MobileNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
           animation-all duration-500
           sm:hidden`}>
 
-        <div className={`${displayNavbar ? "flex flex-col gap-15":"hidden"}`}>
+        <div className={`${displayNavbar ? "flex flex-col":"hidden"}`}>
         <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-30 mx-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
           <NavbarLink to="/" id="home-nav" {...{changeLan, fadeLan, setDisplayNavbar}} ><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
@@ -23,7 +25,9 @@ function MobileNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
           <NavbarLink to="contact" id="contact-nav" {...{changeLan, fadeLan, setDisplayNavbar}} ><h2>{changeLan == "es" ? "Contacto":"Contact"}</h2></NavbarLink>
         </div>
 
-        <button onClick={()=> setDisplayNavbar(!displayNavbar)} className={`${displayNavbar ? "mt-20":""}`}>X</button>
+        <button onClick={()=> setDisplayNavbar(!displayNavbar)} className={`${displayNavbar ? "mt-15":""}`}>
+          {displayNavbar ? <XButton/>:<Hamburger/>}
+        </button>
 
         <button id="change-language" onClick={toggleLan} className={`${displayNavbar ? "hidden":""} ml-auto h-10 w-20 rounded-full bg-gray-600 px-2 cursor-pointer`}>
             <div className="h-8 w-16 rounded-full bg-gray-400">
