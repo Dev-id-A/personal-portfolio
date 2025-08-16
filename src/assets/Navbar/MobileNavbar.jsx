@@ -14,7 +14,7 @@ function MobileNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
           sm:hidden`}>
 
         <div className={`${displayNavbar ? "flex flex-col":"hidden"}`}>
-        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="size-30 mx-auto drop-shadow-[0_0_30px_#48D1CC]" />
+        <img src="/dev-id-logo.svg" alt="Dev-id-logo" className="size-30 mx-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
           <NavbarLink to="/" id="home-nav" {...{changeLan, fadeLan, setDisplayNavbar}} ><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 

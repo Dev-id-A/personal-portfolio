@@ -18,7 +18,6 @@ function App() {
         return () => window.removeEventListener("scroll", windowScroll)
     }
     ,[])
-    
 
     const toggleLan = () => {
         setFadeLan(true)
@@ -32,7 +31,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Layout {...{changeLan, fadeLan, toggleLan, navbarBg}} />}>
-
+          
           <Route index element={<Home {...{changeLan, fadeLan}} />} />
           <Route path="aboutMe" element={<AboutMe {...{changeLan, fadeLan}} />} />
           <Route path="projects" element={<Projects {...{changeLan, fadeLan}} />} />

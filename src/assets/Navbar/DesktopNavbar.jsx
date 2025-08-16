@@ -8,7 +8,7 @@ function DesktopNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
     lg:text-2xl 
     sm:flex
     `}>
-        <img src="public/dev-id-logo.svg" alt="Dev-id-logo" className="md:size-55 size-30 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
+        <img src="/dev-id-logo.svg" alt="Dev-id-logo" className="md:size-55 size-30 mr-auto drop-shadow-[0_0_30px_#48D1CC]" />
 
           <NavbarLink to="/" id="home-nav" changeLan={changeLan} fadeLan={fadeLan}><h2>{changeLan == "es" ? "Inicio":"Home"}</h2></NavbarLink>
 
