@@ -16,16 +16,16 @@ function Contact({fadeLan, changeLan}) {
           <div id="social-media-section" className="mt-20 flex flex-col justify-center gap-10 text-3xl
           md:flex-row md:text-4xl">
 
-            <SocialButton d={paths.github} alt={"Github"} mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
+            <SocialButton href={"https://github.com/Dev-id-A"} d={paths.github} alt={"Github"} mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
 
-            <SocialButton d={paths.linkedin} alt={"LinkedIn"} mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
+            <SocialButton href={"https://www.linkedin.com/in/david-aranzana-medina-708589372"} d={paths.linkedin} alt={"LinkedIn"} mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
 
           </div>
 
           <div className="grid justify-center text-3xl md:text-4xl mt-5 sm:mt-15">
           <h2 className="mt-20 text-center">{changeLan =="es" ? "Puedes contactarme también a través de:":"You can also contact me through:"}</h2>
 
-              <SocialButton d={paths.gmail} alt={"Email"}  mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100 md:w-160"} altContainer={"ml-20 sm:ml-25"} 
+              <SocialButton href={"mailto:dev.id.a.contact@gmail.com"} d={paths.gmail} alt={"Email"}  mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100 md:w-160"} altContainer={"ml-20 sm:ml-25"} 
               svgContainer={"size-18 color-[#000000]"}/>
 
           </div>

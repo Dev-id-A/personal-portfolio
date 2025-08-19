@@ -2,21 +2,19 @@ import DesktopNavbar from "../src/assets/Navbar/DesktopNavbar";
 import { Outlet } from "react-router-dom";
 import MobileNavbar from "../src/assets/Navbar/MobileNavbar";
 import LoadingPage from "../pages/LoadingPage";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 function Layout({changeLan, fadeLan, toggleLan, navbarBg}) {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     
   
     useEffect(()=>{
 
-      if(sessionStorage.getItem("visited")){
-        setLoading(false)}
-      else{
-
+      if(!sessionStorage.getItem("visited")){
+        setLoading(true)
         const loadingTimer = setTimeout(()=>{
         sessionStorage.setItem("visited","true");
-        setLoading(false)
+        setLoading(false);
         },2000)
 
       return ()=> clearTimeout(loadingTimer)
