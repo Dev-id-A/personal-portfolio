@@ -1,11 +1,11 @@
-function Project({projectName, description, divClass, changeLan, src, githubLink, pagesLink}) {
+function Project({ projectName, description, divClass, changeLan, src, githubLink, pagesLink}) {
   return (
-    <div id="project" className={`text-[#0B1120] bg-white border h-fit w-full p-5 rounded-xl col-span-2 
+    <div id="project" className={`flex flex-col justify-between text-[#0B1120] bg-white border h-full w-full p-5 rounded-xl col-span-2 
     transition-all drop-shadow-[0_0_10px_#00e1ffff] hover:scale-105 ${divClass}`}>
         <img src={src} className="mx-auto border h-40 w-120
         sm:h-70"/>
         <h1 className="text-center text-xl sm:text-3xl mt-5">{projectName}</h1>
-        <p className="p-8 text-justify text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda reiciendis dolorum iusto totam sit delectus magni qui sed et autem velit, consectetur officia culpa eius saepe ratione temporibus voluptas?</p>
+        <p className="p-8 text-justify text-md">{description}</p>
 
         <div className="flex flex-col items-center justify-center gap-5
         sm:flex-row"> 

@@ -8,7 +8,8 @@ function LgProjectSection({changeLan, filteredProjects, fadeProjects}) {
            {filteredProjects.map((project, i)=>
                 <Project key={i} projectName={project.alt} src={project.src} 
               githubLink={project.githubLink} pagesLink={project.pagesLink} 
-              changeLan={changeLan} divClass={
+              changeLan={changeLan} description={changeLan == "es" ? project.descriptionES:project.descriptionEN}
+              divClass={
                 i === filteredProjects.length - 1 && filteredProjects.length % 2 == 1 ? "col-start-2":"" }/>   
            )}
         </section>

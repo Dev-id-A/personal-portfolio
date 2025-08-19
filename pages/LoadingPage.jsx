@@ -2,7 +2,7 @@ function LoadingPage() {
   return (
     <main className="flex justify-center items-center h-screen w-screen">
 
-    <style jsx>{`
+    <style>{`
     @keyframes loadingAnimation{
       0% {
         transform: scale(1);
@@ -26,7 +26,7 @@ function LoadingPage() {
       }`}</style>
 
         <img src="/dev-id-logo.svg" alt="Dev-id-logo" 
-        className="size-100 drop-shadow-[0_0_30px_#48D1CC] loading-animation" />
+        className="size-50 sm:size-100 drop-shadow-[0_0_30px_#48D1CC] loading-animation" />
     </main>
   )
 }

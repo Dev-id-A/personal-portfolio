@@ -1,6 +1,6 @@
 @font-face{
     font-family: Urbanist;
-    src: url(../public/fonts/Urbanist-Regular.ttf);
+    src: url(../fonts/Urbanist-Regular.ttf);
 }
 @import "tailwindcss";
 

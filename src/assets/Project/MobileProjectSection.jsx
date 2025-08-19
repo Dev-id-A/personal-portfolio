@@ -8,7 +8,7 @@ function MobileProjectSection({changeLan, filteredProjects, fadeProjects}) {
            {filteredProjects.map((project, i)=>
                 <Project key={i} projectName={project.alt} src={project.src} 
               githubLink={project.githubLink} pagesLink={project.pagesLink} 
-              changeLan={changeLan} />   
+              changeLan={changeLan} description={changeLan == "es" ? project.descriptionES:project.descriptionEN} />   
            )}
         </section>
   )
