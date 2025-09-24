@@ -8,7 +8,9 @@ import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
 
 function App() {
-    const [changeLan, setChangeLan] = useState("es");
+    const [changeLan, setChangeLan] = useState(()=>{
+      return localStorage.getItem("lang") || "es";
+    });
     const [fadeLan, setFadeLan] = useState(false);
     const [navbarBg, setNavbarBg] = useState(false);
 
@@ -22,8 +24,11 @@ function App() {
     const toggleLan = () => {
         setFadeLan(true)
         setTimeout(() => {
-        changeLan == "es" ? setChangeLan("en"):setChangeLan("es")
-        setFadeLan(false)
+          const nextLang = changeLan === "es" ? "en":"es";
+          setChangeLan(nextLang)
+          changeLan == "es" ? setChangeLan("en"):setChangeLan("es")
+          localStorage.setItem("lang", nextLang);
+          setFadeLan(false)
         }, 200)
     };
 
