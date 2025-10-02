@@ -1,4 +1,12 @@
 export const ProjectData = [
+    {src: "src/assets/Project/ProjectsImg/the-grand.netlify.app_.png", 
+        alt: "The grand", 
+        descriptionES: (<>Este proyecto es un ejemplo de una página web para un restaurante de lujo, desarrollada con <span className="text-blue-500 text-xl">Vite + React, Tailwind CSS y varias APIs</span>. Me he enfocado en crear una experiencia visual elegante, intuitiva y totalmente funcional, cuidando tanto el diseño como la usabilidad.</>) , 
+        descriptionEN:(<>This project is an example of a luxury restaurant website, built with <span className="text-blue-500 text-xl">Vite + React, Tailwind CSS, and various APIs</span>. I focused on delivering an elegant visual experience that is both intuitive and fully functional, with attention to both design and usability.</>), 
+        type:"Relevant", 
+        githubLink: "https://github.com/Dev-id-A/restaurant-page", 
+        pagesLink:"https://the-grand.netlify.app/"
+        ,},
     {src: "src/assets/Project/ProjectsImg/random-quote-machine.png", 
         alt: "Random quote machine", 
         descriptionES: (<>En este proyecto desarrollé una aplicación de frases aleatorias utilizando <span className="text-blue-500 text-xl">React</span> y <span className="text-blue-500 text-xl">jQuery</span>. Además utilicé <code>useEffect</code> para gestionar el cambio automático de frases y añadí cambio de color al fondo para añadir más dinamismo.</>) , 
