@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { ProjectData } from "../src/assets/Project/ProjectData";
-import XlProjectSection from "../src/assets/Project/XlProjectSection";
 import LgProjectSection from "../src/assets/Project/LgProjectSection";
 import MobileProjectSection from "../src/assets/Project/MobileProjectSection";
+import ProjectBtn from "../src/assets/Project/ProjectBtn";
 
 function Projects({fadeLan, changeLan }) {
   const [certifications, setCertifications] = useState(false);
-  const [displayProjects, setDisplayProjects] = useState("all");
+  const [displayProjects, setDisplayProjects] = useState("Relevant");
   const [fadeProjects, setFadeProjects] = useState(false)
   const filteredProjects = ProjectData.filter(project => displayProjects === "all" || project.type === displayProjects);
 
@@ -27,14 +27,11 @@ function Projects({fadeLan, changeLan }) {
         <section id="project-btn-section" className="flex flex-col justify-center mt-20 gap-5 text-center text-xl
         sm:flex-row sm:gap-20 sm:text-3xl">
 
-          <button id="all" className="border hover:cursor-pointer hover:scale-110 hover:text-blue-500 rounded-2xl p-3
-          transition-transform duration-300" 
-          onClick={()=> toggleFade("all")}>
-            {changeLan == "es" ? "Todos los proyectos":"All projects"}</button>
-          <button id="certifications" className="border hover:cursor-pointer hover:scale-110 hover:text-blue-500 rounded-2xl p-3
-          transition-transform duration-300" 
-          onClick={()=>setCertifications(!certifications)}>
-            {changeLan == "es" ? "Certificados":"Certifications"}</button>
+          <ProjectBtn children={changeLan == "es" ? "Destacados":"Relevant"} click={()=> toggleFade("Relevant")}/>
+
+          <ProjectBtn children={changeLan == "es" ? "Todos los proyectos":"All projects"} click={()=> toggleFade("all")}/>
+
+          <ProjectBtn children={changeLan == "es" ? "Certificados":"Certifications"} click={()=>setCertifications(!certifications)}/>
 
         </section>
 
@@ -42,14 +39,11 @@ function Projects({fadeLan, changeLan }) {
           <div className={`flex flex-col text-lg justify-center mt-10 gap-5 px-5
           transition-opacity duration-500 ${certifications == true ? "opacity-100": "opacity-0"}
           sm:flex-row sm:text-2xl`}>
-            <button className="border hover:cursor-pointer hover:scale-110 hover:text-blue-500 rounded-2xl p-3
-            transition-transform duration-300" 
-            onClick={()=> toggleFade("Front end")}>
-              Front-end</button>
-            <button className="border hover:cursor-pointer hover:scale-110 hover:text-blue-500 rounded-2xl p-3
-            transition-transform duration-300" 
-            onClick={()=> toggleFade("Data visualization")}>
-              Data visualization</button>
+
+            <ProjectBtn children={"Front-end"} click={()=> toggleFade("Front end")}/>
+
+            <ProjectBtn children={"Data visualization"} click={()=> toggleFade("Data visualization")}/>
+
           </div>
       
           <LgProjectSection {...{changeLan, filteredProjects, fadeProjects}} />
