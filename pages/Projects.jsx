@@ -51,8 +51,6 @@ function Projects({fadeLan, changeLan }) {
             onClick={()=> toggleFade("Data visualization")}>
               Data visualization</button>
           </div>
-
-          <XlProjectSection {...{changeLan, filteredProjects, fadeProjects}} />
       
           <LgProjectSection {...{changeLan, filteredProjects, fadeProjects}} />
 

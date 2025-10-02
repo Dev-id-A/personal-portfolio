@@ -3,8 +3,7 @@ import SocialButton from "../src/assets/ContactPage/SocialButton";
 
 function Contact({fadeLan, changeLan}) {
   return (
-    <main id="contact-main" className={`grid grid-cols-1 gap-20 px-5 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}
-      xl:grid-cols-2 xl:px-30`}>
+    <main id="contact-main" className={`grid grid-cols-1 gap-20 px-5 transition-opacity duration-300 ${fadeLan ? "opacity-0":"opacity-100"}`}>
 
 
       <section className="mt-10
@@ -13,7 +12,7 @@ function Contact({fadeLan, changeLan}) {
           <h1 id="contact-title" className="text-4xl md:text-6xl text-center mt-10">{changeLan == "es" ? "Contáctame":"Get in touch"}</h1>
 
 
-          <div id="social-media-section" className="mt-20 flex flex-col justify-center gap-10 text-3xl
+          <div id="social-media-section" className="mt-20 flex flex-col justify-center gap-10 xl:gap-0 text-3xl xl:px-40
           md:flex-row md:text-4xl">
 
             <SocialButton href={"https://github.com/Dev-id-A"} d={paths.github} alt={"Github"} mainDiv={"mx-auto w-70 h-30 mt-5 sm:mt-15 sm:w-100"} altContainer={"ml-10"} svgContainer={"size-24 color-[#000000]"}/>
