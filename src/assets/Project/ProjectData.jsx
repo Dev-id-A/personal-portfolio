@@ -1,5 +1,5 @@
 export const ProjectData = [
-    {src: "src/assets/Project/ProjectsImg/the-grand.netlify.app_.png", 
+    {src: "/ProjectsImg/the-grand.netlify.app_.png", 
         alt: "The grand", 
         descriptionES: (<>Este proyecto es un ejemplo de una página web para un restaurante de lujo, desarrollada con <span className="text-blue-500 text-xl">Vite + React, Tailwind CSS y varias APIs</span>. Me he enfocado en crear una experiencia visual elegante, intuitiva y totalmente funcional, cuidando tanto el diseño como la usabilidad.</>) , 
         descriptionEN:(<>This project is an example of a luxury restaurant website, built with <span className="text-blue-500 text-xl">Vite + React, Tailwind CSS, and various APIs</span>. I focused on delivering an elegant visual experience that is both intuitive and fully functional, with attention to both design and usability.</>), 
@@ -7,7 +7,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/restaurant-page", 
         pagesLink:"https://the-grand.netlify.app/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/random-quote-machine.png", 
+    {src: "/ProjectsImg/random-quote-machine.png", 
         alt: "Random quote machine", 
         descriptionES: (<>En este proyecto desarrollé una aplicación de frases aleatorias utilizando <span className="text-blue-500 text-xl">React</span> y <span className="text-blue-500 text-xl">jQuery</span>. Además utilicé <code>useEffect</code> para gestionar el cambio automático de frases y añadí cambio de color al fondo para añadir más dinamismo.</>) , 
         descriptionEN:(<>For this project, I built a random quote app with <span className="text-blue-500 text-xl">React</span> and <span className="text-blue-500 text-xl">jQuery</span>. I used <code>useEffect</code> to switch quotes automatically and added background color changes to make it feel more dynamic.</>), 
@@ -15,7 +15,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/random-quote-machine", 
         pagesLink:"https://dev-id-a.github.io/random-quote-machine/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/markdown-previewer.png", 
+    {src: "/ProjectsImg/markdown-previewer.png", 
         alt: "Markdown previewer", 
         descriptionES: (<>En este proyecto desarrollé una aplicación de Markdown utilizando <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span> y una <span className="text-blue-500 text-xl">API de Markdown</span>. Con ella puedes escribir en un <code>textarea</code> y ver inmediatamente cómo se representa el contenido en el contenedor de al lado.</>), 
         descriptionEN: (<>In this project, I built a Markdown application using <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span> and a <span className="text-blue-500 text-xl">Markdown API</span>. It lets you write in a <code>textarea</code> and instantly see a live preview in the container next to it.</>), 
@@ -23,7 +23,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/markdown-previewer", 
         pagesLink:"https://dev-id-a.github.io/markdown-previewer/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/drum-machine.png", 
+    {src: "/ProjectsImg/drum-machine.png", 
         alt: "Drum machine", 
         descriptionES: (<>En esta aplicación desarrollada con <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span> y <span className="text-blue-500 text-xl">SASS</span>, utilicé <code>useRef</code> para reproducir los beats tanto al hacer clic como al presionar las teclas del teclado.</>), 
         descriptionEN: (<>In this app built with <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span>, and <span className="text-blue-500 text-xl">SASS</span>, I used <code>useRef</code> to play the beats both by clicking and by pressing the keyboard keys.</>), 
@@ -31,7 +31,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/drum-machine", 
         pagesLink:"https://dev-id-a.github.io/drum-machine/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/calculator.png", 
+    {src: "/ProjectsImg/calculator.png", 
         alt: "Calculator", 
         descriptionES: (<>En este proyecto, desarrollado con <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span> y <span className="text-blue-500 text-xl">SASS</span>, utilicé <code>regex</code> para crear una calculadora funcional que con los mínimos errores.</>), 
         descriptionEN: (<>In this project, built with <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span>, and <span className="text-blue-500 text-xl">SASS</span>, I used <code>regex</code> to create a functional calculator with as few errors as possible.</>), 
@@ -39,7 +39,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/calculator", 
         pagesLink:"https://dev-id-a.github.io/calculator/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/25-5-clock.png", 
+    {src: "/ProjectsImg/25-5-clock.png", 
         alt: "25+5 clock", 
         descriptionES: (<>Este proyecto lo hice con <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span> y <span className="text-blue-500 text-xl">SASS</span>. Usé <code>useEffect</code> y un poco de formateo de tiempo para que cada cierto tiempo de un sonido que indica el descanso o cuando debes continuar.</>), 
         descriptionEN: (<>I built this project with <span className="text-blue-500 text-xl">React</span>, <span className="text-blue-500 text-xl">Bootstrap</span>, and <span className="text-blue-500 text-xl">SASS</span>. I used <code>useEffect</code> and some time formatting so that every certain interval a sound goes off to let you know when it’s break time or when you should continue.</>), 
@@ -47,7 +47,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/25-5-clock", 
         pagesLink:"https://dev-id-a.github.io/25-5-clock/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/bar-chart.png", 
+    {src: "/ProjectsImg/bar-chart.png", 
         alt: "Bar chart", 
         descriptionES: (<>Gráfico de barras hecho con <span className="text-blue-500 text-xl">D3.js</span> donde enseño la evolución del <span className="font-bold">Producto Interior Bruto (PIB)</span> de EE.UU., permitiendo ver el crecimiento económico:</>), 
         descriptionEN: (<>Bar chart built with <span className="text-blue-500 text-xl">D3.js</span>, showing the evolution of the <span className="font-bold">U.S. Gross Domestic Product (GDP)</span> and showing the economic growth</>), 
@@ -55,7 +55,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/bar-chart", 
         pagesLink:"https://dev-id-a.github.io/bar-chart/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/scatterplot-graph.png", 
+    {src: "/ProjectsImg/scatterplot-graph.png", 
         alt: "Scatterplot graph", 
         descriptionES: (<>Scatterplot creado con <span className="text-blue-500 text-xl">D3.js</span> que representa los tiempos de ciclistas en el Tour de Francia y marca los casos relacionados con <span className="font-bold">doping</span>, viendo el contraste entre récords limpios y con trampa.</>), 
         descriptionEN: (<>Scatterplot built with <span className="text-blue-500 text-xl">D3.js</span>, plotting Tour de France cyclists’ times and focalizing <span className="font-bold">doping</span> cases to show the contrast between clean and cheated records.</>), 
@@ -63,7 +63,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/scatterplot-graph", 
         pagesLink:"https://dev-id-a.github.io/scatterplot-graph/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/heat-map.png", 
+    {src: "/ProjectsImg/heat-map.png", 
         alt: "Heat map", 
         descriptionES: (<>Mapa de calor con <span className="text-blue-500 text-xl">D3.js</span> que refleja las <span className="font-bold">temperaturas mensuales y anuales</span>, cambiando números a colores para mostrar el cambio en el clima.</>), 
         descriptionEN: (<>Heatmap made with <span className="text-blue-500 text-xl">D3.js</span>, displaying <span className="font-bold">monthly and yearly temperatures</span>, changing numbers into colors to show the changes on the weather.</>), 
@@ -71,7 +71,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/heat-map", 
         pagesLink:"https://dev-id-a.github.io/heat-map/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/choropleth-map.png", 
+    {src: "/ProjectsImg/choropleth-map.png", 
         alt: "Choropleth map", 
         descriptionES: (<>Mapa coroplético desarrollado con <span className="text-blue-500 text-xl">D3.js</span>, donde se muestra el porcentaje de personas con <span className="font-bold">título universitario</span> en distintos condados de EE.UU., mostrando la distribución geográfica de la educación.</>), 
         descriptionEN: (<>Choropleth map built with <span className="text-blue-500 text-xl">D3.js</span>, showing the percentage of people with a <span className="font-bold">college degree</span> across U.S. counties, showing the geographic distribution of education.</>), 
@@ -79,7 +79,7 @@ export const ProjectData = [
         githubLink: "https://github.com/Dev-id-A/choropleth-map", 
         pagesLink:"https://dev-id-a.github.io/choropleth-map/"
         ,},
-    {src: "src/assets/Project/ProjectsImg/treemap-diagram.png", 
+    {src: "/ProjectsImg/treemap-diagram.png", 
         alt: "Treemap diagram", 
         descriptionES: (<>Treemap hecho con <span className="text-blue-500 text-xl">D3.js</span> que representa los <span className="font-bold">100 videojuegos más vendidos</span>, organizados por consola y cantidad de ventas, para ver la tendencia de los jugadores.</>), 
         descriptionEN: (<>Treemap built with <span className="text-blue-500 text-xl">D3.js</span>, representing the <span className="font-bold">100 best-selling video games</span>, organized by console and sales volume to watch the player trends.</>), 
