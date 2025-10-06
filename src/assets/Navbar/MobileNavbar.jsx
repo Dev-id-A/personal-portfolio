@@ -8,7 +8,7 @@ function MobileNavbar({changeLan, fadeLan, toggleLan, navbarBg}) {
 
   return (
         <div className={`flex fixed items-center text-2xl px-3 w-full 
-          ${navbarBg ? " animation-all duration-500 bg-[#0b1120a6] backdrop-blur-md":""}
+          ${navbarBg ? "animation-all duration-300 bg-[#0b1120a6] backdrop-blur-md":""}
           ${displayNavbar ? "h-full flex-col bg-[#0b1120a6] backdrop-blur-md":"h-20 flex-row" } fixed z-50 top-0 
           animation-all duration-500
           sm:hidden`}>
